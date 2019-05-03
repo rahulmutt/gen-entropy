@@ -1,0 +1,15 @@
+name:                gen-entropy
+version:             0.1.0.0
+author:              Rahul Muttineni
+maintainer:          rahulmutt@gmail.com
+build-type:          Simple
+cabal-version:       1.12
+
+executable gen-entropy
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >=4.11 && <4.12
+                     , bytestring
+                     , cryptohash-sha256
+  java-sources:        Entropy.java
+  eta-options:         -Wall -Werror
